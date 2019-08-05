@@ -1,2 +1,0 @@
-# quartic
-Created with CodeSandbox
