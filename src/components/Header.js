@@ -1,7 +1,7 @@
 import React from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-const Header = () => {
+const Header = (props) => {
   return (
     <header className="container-fluid bg-light mb-2">
       <div className="row justify-content-center">
@@ -13,7 +13,7 @@ const Header = () => {
           <button 
           type="button" 
           className="btn btn-dark float-right px-4"
-          onClick={()=>{console.log('Adding...!')}}
+          onClick={props.handleAddOption}
           >
             <FontAwesomeIcon className="mr-2" icon="plus-circle" />
             Add New
